@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Raleway&display=swap" rel="stylesheet">
+
+    <style>
+        body{margin : 0; padding : 0;}
+        video {max-width: 100%; height: 100%; display: block; position: fixed; bottom: 0; right: 0;}
+        .back{}
+        .jelly01{}
+        .jelly02{}
+        .line01{max-width: 100%; position: relative; top: 0; left: 0;}
+        .line02{max-width: 100%; position: relative; top: -1000px; left: 0;}
+        .line03{max-width: 100%; position: relative; top: -2000px; left: 0;}
+        .maintext01{position: absolute; top: 20%; left: 40%; color: ; font-size: 5em; font-weight: 600; font-family: 'Raleway', sans-serif;}
+        .maintext02{position: absolute; top: 15%; left: 80%; color: ; font-size: 3em; font-weight: 500; font-family: 'Nanum Myeongjo', serif;}
+        .daytext{position: absolute; top: 63%; left: 2%; color:#403548; font-size: 3em; font-weight: 400; font-family: 'Raleway', sans-serif; }
+        .subtext01{position: absolute; top: 70%; left: 2%; color:#403548; font-size: 2.5em; font-weight: 200; font-family: 'Raleway', sans-serif; }
+        .nametext{position: absolute; top: 78%; left: 2%; color:#403548; font-size: 1.5em; font-weight: 100; font-family: 'Nanum Myeongjo', serif;}
+
+        @media ( max-width: 1920px ) {
+        body { }
+        }
+
+        @media ( max-width: 1565px ) {
+        body { }
+        .line01{max-width: 100%; position: relative; top: 0; left: 0;}
+        .line02{max-width: 100%; position: relative; top: -500px; left: 0;}
+        .line03{max-width: 100%; position: relative; top: -800px; left: 0;}
+        .maintext01{position: absolute; top: 20%; left: 40%; color: ; font-size: 4.5em; font-weight: 600; font-family: 'Raleway', sans-serif;}
+        .maintext02{position: absolute; top: 15%; left: 80%; color: ; font-size: 2.7em; font-weight: 500; font-family: 'Nanum Myeongjo', serif;}
+        .daytext{position: absolute; top: 63%; left: 2%; color:#403548; font-size: 2.7em; font-weight: 400; font-family: 'Raleway', sans-serif; }
+        .subtext01{position: absolute; top: 72%; left: 2%; color:#403548; font-size: 2em; font-weight: 200; font-family: 'Raleway', sans-serif; }
+        .nametext{position: absolute; top: 78%; left: 2%; color:#403548; font-size: 1.3em; font-weight: 100; font-family: 'Nanum Myeongjo', serif;} }
+
+        @media ( max-width: 1411px ) {
+        .line01{max-width: 100%; position: relative; top: 0; left: 0;}
+        .line02{max-width: 100%; position: relative; top: -500px; left: 0;}
+        .line03{max-width: 100%; position: relative; top: -800px; left: 0;}
+        .maintext01{position: absolute; top: 20%; left: 40%; color: ; font-size: 4em; font-weight: 600; font-family: 'Raleway', sans-serif;}
+        .maintext02{position: absolute; top: 15%; left: 80%; color: ; font-size: 2.5em; font-weight: 500; font-family: 'Nanum Myeongjo', serif;}
+        .daytext{position: absolute; top: 63%; left: 2%; color:#403548; font-size: 2.5em; font-weight: 400; font-family: 'Raleway', sans-serif; }
+        .subtext01{position: absolute; top: 72%; left: 2%; color:#403548; font-size: 1.5em; font-weight: 200; font-family: 'Raleway', sans-serif; }
+        .nametext{position: absolute; top: 78%; left: 2%; color:#403548; font-size: 1em; font-weight: 100; font-family: 'Nanum Myeongjo', serif;}
+        }
+
+        @media ( max-width: 1255px ) {
+        .line01{max-width: 100%; position: relative; top: 0; left: 0;}
+        .line02{max-width: 100%; position: relative; top: -500px; left: 0;}
+        .line03{max-width: 100%; position: relative; top: -800px; left: 0;}
+        .maintext01{position: absolute; top: 20%; left: 40%; color: ; font-size: 3.5em; font-weight: 600; font-family: 'Raleway', sans-serif;}
+        .maintext02{position: absolute; top: 15%; left: 80%; color: ; font-size: 2.2em; font-weight: 500; font-family: 'Nanum Myeongjo', serif;}
+        .daytext{position: absolute; top: 63%; left: 2%; color:#403548; font-size: 2.2em; font-weight: 400; font-family: 'Raleway', sans-serif; }
+        .subtext01{position: absolute; top: 72%; left: 2%; color:#403548; font-size: 1.2em; font-weight: 200; font-family: 'Raleway', sans-serif; }
+        .nametext{position: absolute; top: 78%; left: 2%; color:#403548; font-size: 1em; font-weight: 100; font-family: 'Nanum Myeongjo', serif;}
+        }
+
+    </style>
+
+</head>
+
+<body>
+     <!--뒤에 영상 test 후에 영상 다듬을 예정-->
+    <div class="back">
+        <video muted autoplay loop>
+            <source src="04-1.mp4" type="video/mp4">
+            </video>
+    </div>
+
+     <!---->
+    <div class="jelly01"></div>
+    <div class="jelly02"></div>
+
+     <!--line 테스트 svg 나중에 영상이나 혹은 자바로 움직일 예정-->
+    <div class="line01">
+        <svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5121.25 1644.13"><defs><style>.cls-1{fill:none;stroke:#f6ce5d;stroke-miterlimit:10;stroke-width:4px;}</style></defs><title>디퍼 선</title><path class="cls-1" d="M6474.73,2191.2c-647.1-13.78-1098.82,137-1395.67,281.59-404.06,196.82-544.77,393.7-991.66,636.62-94.68,51.46-577,296.26-1248.76,416.25-507.92,90.73-721.91,37.24-869.24-73.45-32.18-24.19-213.6-160.49-195.88-330.56,17.43-167.28,216.64-262.71,281.58-293.82,303.86-145.57,631.76-60,832.51,0,808.6,241.76,1377.4,623.36,1689.5,771.29C5042.6,3819.75,5766,3968.21,6891,3635.85" transform="translate(-1770.3 -2188.32)"/></svg>
+    </div>
+    <div class="line02">
+        <svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5090.93 4522.26"><defs><style>.cls-1{fill:none;stroke:#f6ce5d;stroke-miterlimit:10;stroke-width:4px;}</style></defs><title>line02</title><path class="cls-1" d="M4026.19-918.45c-496.82,487-616,1138.81-355,1542.58,71.39,110.45,414.21,295,550.92,379.53,176.6,109.14,262.75,151.75,269.34,232.61,10.74,131.71-194.3,307.13-391.77,306.07-223.26-1.2-264.81-227.08-514.19-269.34-229.58-38.91-531.83,95.31-587.66,306.07-61.39,231.79,194.33,484.38,404,587.65,401.32,197.65,947.39,2.7,1248.76-342.8,263.59-302.19,479.62-879.65,183.64-1236.52-174-209.81-503.81-317.77-808-220.37-266.72,85.4-467.88,314-514.2,563.17-50.5,271.67,98.25,485.83,330.55,820.26,343.83,495,626.16,468.06,722.33,759.05,123.07,372.43-113.61,978.81-465.23,1077.37C3483.5,3759.58,3013.62,2233,1345,1407.67,771.55,1124,241.93,1014.92-111.86,966.93" transform="translate(112.13 919.88)"/></svg>
+    </div>
+    <div class="line03">
+        <svg id="레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5083.46 3112.24"><defs><style>.cls-1{fill:none;stroke:#f6ce5d;stroke-miterlimit:10;stroke-width:4px;}</style></defs><title>line03</title><path class="cls-1" d="M1149.14,2546.24c233.75-115.56,553.74-271.26,942.69-453,272.22-127.18,460.42-211.88,685.6-159.15,48.6,11.38,320,74.91,342.79,257.09,17.73,141.52-117.59,330-293.82,318.31-120.6-8-241.82-124.68-257.1-244.85-40.19-316.06,650.54-649.34,979.42-808,674-325.2,939.9-288.25,1334.46-465.23,413.9-185.64,930.13-589.09,1346.7-1554.82" transform="translate(-1148.25 564.21)"/></svg>
+    </div>
+
+     <!--텍스트-->
+    <div class="maintext01">
+        <p>Fall In Love With Candles</p>
+    </div>
+
+    <div class="maintext02">
+        <p>감성향기</p>
+    </div>
+        
+    <div class="daytext">
+        <p>2017.02.08-22</p>
+    </div>
+
+    <div class="subtext01">
+        <p>Toy Republic</p>
+    </div>
+
+    <div class="nametext">
+        <p>김수정 김온숙 김희나 김배경 남윤경 성수현 이시현 임미정</p>
+    </div>
+
+    <div id="result" style="position: absolute; background: #ffffff; width: 30px; height: 30px; opacity: 0.4; border-radius: 100%;"> </div>
+
+    <script>
+        function resultFun(x) { var positionLeft = x.clientX; var positionTop = x.clientY;
+            document.getElementById('result').style.left = positionLeft - 10 + "px";
+            document.getElementById('result').style.top = positionTop - 10 +"px"; }
+            if (document.addEventListener) { document.addEventListener("mousemove", resultFun); }
+            else if (document.attachEvent) { document.attachEvent("onmousemove", resultFun);}
+        //attachEvent는 IE8이하와 오페라에서 사용하는 명령어이다
+    </script>
+
+</body>
+</html>
